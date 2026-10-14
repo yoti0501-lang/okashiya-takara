@@ -21,4 +21,17 @@
 <section id='gift' class='gift'><div class='gift-img'><img src='assets/1000015852.jpg' alt='TAKARAの焼菓子ギフト'></div><div class='gift-copy'><p class='section-no'>03 — GIFT</p><h2>大切な人へ、<br>米粉のお菓子を。</h2><p>焼菓子を詰め合わせたギフトもご用意しています。ちょっとした手土産から贈りものまで、お気軽にご相談ください。</p><div class='actions'><a class='button' href='https://okashiyatkr.base.shop/' target='_blank' rel='noopener noreferrer'>ONLINE SHOP ↗</a><a class='button outline' href='reservation.html'>ご予約はこちら →</a></div></div></section>
 <section class='gallery'><img src='assets/1000015847.jpg' alt='花をあしらった焼菓子'><img src='assets/1000015850.jpg' alt='フルーツケーキ'><img src='assets/1000015851.jpg' alt='フルーツタルト'></section>
 <section class='online-reserve'><div><p class='section-no'>ONLINE SHOP</p><h2>おうちでも、<br>TAKARAのお菓子を。</h2><p>オンラインでご購入いただける商品はBASEショップでご案内しています。商品の在庫・販売状況はBASEで最新情報をご確認ください。</p><a class='button' href='https://okashiyatkr.base.shop/' target='_blank' rel='noopener noreferrer'>BASE ONLINE SHOP ↗</a></div><div><p class='section-no'>RESERVATION</p><h2>ご予約・<br>ご注文はこちら。</h2><p>ご予約商品や注文限定のケーキ・タルトは、専用フォームからご相談いただけます。</p><a class='button outline' href='reservation.html'>予約フォームへ →</a></div></section><section id='shop' class='shop'><div><p class='section-no'>04 — SHOP INFO</p><h2>お菓子屋<br>TAKARA</h2><p class='lead'>東武練馬駅から歩いて、<br>今日のおやつを探しに。</p></div><div class='info'><dl><dt>ADDRESS</dt><dd>〒175-0083<br>東京都板橋区徳丸1-18-1</dd><dt>TEL</dt><dd><a href="tel:08072832066">080-7283-2066</a></dd><dt>OPEN</dt><dd>水・木・金・土<br>10:00 — 15:00<br><small>※商品がなくなり次第終了する場合があります。</small></dd><dt>CLOSED</dt><dd>日・月・火</dd><dt>ACCESS</dt><dd>東武東上線「東武練馬駅」から徒歩約5〜7分</dd></dl><div class='actions'><a class='button' href='https://www.google.com/maps/place/%E3%81%8A%E8%8F%93%E5%AD%90%E5%B1%8BTAKARA/@35.7700293,139.6663004,17z' target='_blank' rel='noopener noreferrer'>Google Maps ↗</a><a class='button outline' href='https://www.instagram.com/okashiya_takara/' target='_blank' rel='noopener noreferrer'>Instagram ↗</a></div><p class='update'>営業日・営業時間、当日の商品情報はInstagramで最新情報をご確認ください。</p></div></section>
-</main><footer><div class='footer-brand'><span class='bow'>∞</span><strong>OKASHIYA TAKARA</strong><span>Gluten free · Rice flour bread and sweets</span></div><p>© 2026 OKASHIYA TAKARA</p></footer><script src='script.js'></script></body></html>
+</main><footer><div class='footer-brand'><span class='bow'>∞</span><strong>OKASHIYA TAKARA</strong><span>Gluten free · Rice flour bread and sweets</span></div><p>© 2026 OKASHIYA TAKARA</p></footer><script src='script.js'></script><!-- TAKARA outbound action tracking -->
+<script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+    var href = link.getAttribute('href') || '';
+    var action = null;
+    if (/^tel:/i.test(href)) action = 'takara_phone_click';
+    else if (/^https:\/\/okashiyatkr\.base\.shop(?:\/|$)/i.test(href)) action = 'takara_base_click';
+    else if (/^https:\/\/docs\.google\.com\/forms\//i.test(href)) action = 'takara_reservation_form_click';
+    if (action) gtag('event', action, { link_url: link.href, page_location: location.href });
+  });
+</script>
+</body></html>
