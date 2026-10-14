@@ -12,4 +12,17 @@
 <article class='menu-card'><img src='assets/1000015846.jpg' alt='米粉のパン'><h2>米粉のパン</h2><p>甘いものだけでなく、お食事にも楽しんでいただける米粉パン。</p></article>
 <article class='menu-card'><img src='assets/1000015847.jpg' alt='季節のお菓子'><h2>季節のお菓子</h2><p>旬の素材を取り入れた、その季節ならではのお菓子。</p></article>
 <article class='menu-card'><img src='assets/1000015845.jpg' alt='焼菓子'><h2>焼菓子</h2><p>手土産や贈りものにも。見た目にも楽しい米粉の焼菓子をご用意しています。</p></article>
-<article class='menu-card'><img src='assets/1000015851.jpg' alt='フルーツタルト'><h2>ケーキ・タルト</h2><p>季節のフルーツを楽しむケーキやタルト。※ご注文限定となります。別途ご相談ください。</p><a class='card-link' href='reservation.html'>ご予約はこちら →</a></article></div><div class='page-note'>※商品は日によって種類・数量が異なります。売り切れ次第終了となる場合があります。<br>※商品によって卵・乳製品などを使用しています。アレルギーについては店頭でお尋ねください。</div><a class='button' href='https://okashiyatkr.base.shop/' target='_blank' rel='noopener noreferrer'>ONLINE SHOPを見る ↗</a> <a class='button outline' href='https://www.instagram.com/okashiya_takara/' target='_blank' rel='noopener noreferrer'>今週のラインナップを見る ↗</a></section></main><footer><div class='footer-brand'><span class='bow'>∞</span><strong>OKASHIYA TAKARA</strong><span>Gluten free · Rice flour bread and sweets</span></div><p>© 2026 OKASHIYA TAKARA</p></footer><script src='script.js'></script></body></html>
+<article class='menu-card'><img src='assets/1000015851.jpg' alt='フルーツタルト'><h2>ケーキ・タルト</h2><p>季節のフルーツを楽しむケーキやタルト。※ご注文限定となります。別途ご相談ください。</p><a class='card-link' href='reservation.html'>ご予約はこちら →</a></article></div><div class='page-note'>※商品は日によって種類・数量が異なります。売り切れ次第終了となる場合があります。<br>※商品によって卵・乳製品などを使用しています。アレルギーについては店頭でお尋ねください。</div><a class='button' href='https://okashiyatkr.base.shop/' target='_blank' rel='noopener noreferrer'>ONLINE SHOPを見る ↗</a> <a class='button outline' href='https://www.instagram.com/okashiya_takara/' target='_blank' rel='noopener noreferrer'>今週のラインナップを見る ↗</a></section></main><footer><div class='footer-brand'><span class='bow'>∞</span><strong>OKASHIYA TAKARA</strong><span>Gluten free · Rice flour bread and sweets</span></div><p>© 2026 OKASHIYA TAKARA</p></footer><script src='script.js'></script><!-- TAKARA outbound action tracking -->
+<script>
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+    var href = link.getAttribute('href') || '';
+    var action = null;
+    if (/^tel:/i.test(href)) action = 'takara_phone_click';
+    else if (/^https:\/\/okashiyatkr\.base\.shop(?:\/|$)/i.test(href)) action = 'takara_base_click';
+    else if (/^https:\/\/docs\.google\.com\/forms\//i.test(href)) action = 'takara_reservation_form_click';
+    if (action) gtag('event', action, { link_url: link.href, page_location: location.href });
+  });
+</script>
+</body></html>
